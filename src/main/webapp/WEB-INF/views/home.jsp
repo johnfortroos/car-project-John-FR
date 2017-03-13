@@ -2,12 +2,13 @@
 <%@ page session="false" %>
 <html>
 <head>
-	<title>Home</title>
+	<title>Luna es la mejor</title>
 </head>
 <body>
 <h1>
-	Hello world!  
+	Hello Luna!  
 </h1>
+<a href ="tabla">Mostrar todos los productos!</a>
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>
