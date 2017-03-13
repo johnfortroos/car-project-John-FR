@@ -13,9 +13,15 @@ public class ProductsService {
 	
 	@Autowired
 	ProductRepository productRepository;
+	
 	@Transactional
 	public List <Product> getProducts(){
 		return productRepository.findAll();
 	}
+	
+	@Transactional
+	public Product findById(Integer Id){
+		return productRepository.findOne(Id);
+	}	
 
 }

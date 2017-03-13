@@ -9,6 +9,7 @@
 	Hello Luna!  
 </h1>
 <a href ="tabla">Mostrar todos los productos!</a>
+<a href ="productID">Mostrar un producto!</a>
 
 <P>  The time on the server is ${serverTime}. </P>
 </body>
