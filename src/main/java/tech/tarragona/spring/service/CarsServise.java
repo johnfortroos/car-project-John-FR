@@ -1,4 +1,4 @@
-package tech.tarragona.spring.controller;
+package tech.tarragona.spring.service;
 
 import java.util.List;
 
