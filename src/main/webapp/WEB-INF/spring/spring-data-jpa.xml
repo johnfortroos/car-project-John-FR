@@ -12,7 +12,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 		<!-- Configure the data source bean -->
-		<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/tienda"/>
+		<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/carsDS"/>
 		
 		<bean id="eclipseLinkJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter">
 			<property name="showSql" value="true" />

@@ -7,28 +7,35 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Luna es la mejor!</title>
+<title>CARS</title>
 </head>
 <body>
-<h1>Todos los productos </h1>
+<h1>Todos los cars </h1>
 <table>
         <tr>
-            <th>ID</th>
-            <th>Descripcion</th>
-            <th>Precio</th>
-            <th>Comprar</th>
+            <th>matriculaD</th>
+            <th>modelo</th>
+            <th>fecha matriculacion</th>
+            <th>km</th>
+            <th>precio</th>
         </tr>
-        <c:forEach items="${products}" var="product">
+        <c:forEach items="${Cars}" var="cars">
             <tr>
                 
-                <td><c:out value="${product.id}"></c:out></td>
-                <td><c:out value="${product.name}"></c:out></td>
-                <td><c:out value="${product.price}"></c:out></td>
-                <td><a href="AddCarrito?id=${product.id}" >ADD al carrito</a></td>            
+                <td><c:out value="${cars.matricula}"></c:out></td>
+                
+                <td><c:out value="${cars.fechaMatriculacion}"></c:out></td>
+                <td><c:out value="${cars.km}"></c:out></td>
+                <td><c:out value="${cars.modelo}"></c:out></td>
+                <td><c:out value="${cars.precio}"></c:out></td>
+                
+                <td><a href="editCars?matricula=${cars.matricula}" >edit </a></td>            
             
                 
             </tr>
         </c:forEach>
     </table>
+    
+			<a href ="add">--ADD--</a>		
 </body>
 </html>
